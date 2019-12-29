@@ -78,5 +78,6 @@ exports.config = {
        };
        new HTMLReport().from('C:/Working/Protractordemo/xmlresults.xml', testConfig);
    });
+   
 }
 };
