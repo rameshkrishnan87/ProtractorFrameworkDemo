@@ -15,8 +15,8 @@ let homepage = function(){
         goButton.click();
     };
     this.verifyResult = function(result){
-        let output = element(by.cssContainingText('.ng-binding',result));
-        expect(output.getText()).toEqual(result);
+        let output = element.all(by.cssContainingText('.ng-binding',result));
+        expect(output.getText()).toContain(result);
     };
 };
 
